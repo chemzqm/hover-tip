@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example of hover-tip</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="build/build.css">
+    <script src="build/build.js"></script>
+    <style>
+      body {
+        padding:100px;
+      }
+    /* Table */
+    .datatable-component table {
+      border-collapse: collapse;
+    }
+
+    /* Header */
+    .datatable-component table thead {
+    }
+
+    .datatable-component table thead th {
+    }
+
+    /* Footer */
+    .datatable-component table tfoot {
+    }
+
+    .datatable-component table tfoot td {}
+
+    /* Pager */
+    .datatable-component table tfoot td ul.pager li {
+    }
+
+    .datatable-component table tfoot td ul.pager li.page.active a {
+      text-decoration: none;
+    }
+
+    .shows-indicator h2{
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .shows-table table {
+      width: 100%;
+      border-spacing: 8px;
+      border-collapse: separate;
+    }
+
+    .shows-table table th, .shows-table table td {
+      text-align: right;
+      border-radius: 5px;
+      padding: 4px 10px 4px 5px;
+      margin: 5px;
+      background-color: #F4F4F4;
+      word-wrap: break-word;
+      max-width: 100px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .shows-table table thead {
+      text-align: center;
+    }
+
+    .shows-table table td.h1 {
+      background-color: #70AD2C;
+    }
+
+    .shows-table table td.h2 {
+      background-color: #E09513;
+    }
+
+    .shows-table table td.h3 {
+      background-color: #36A7BD;
+    }
+
+    .shows-table table tfoot {
+      line-height: 20px;
+    }
+    .shows-table table a {
+      display: block;
+      height: 100%;
+      text-decoration: none;
+      color: #000;
+    }
+    .datatable-component table thead tr th a.sort {
+      user-select: none;
+      cursor: pointer;
+    }
+
+    .datatable-component table thead tr th a.sort:after {
+      font-size: 9px;
+      display: inline-block;
+      text-indent: 5px;
+      vertical-align: middle;
+      margin: 0;
+      font-family: FontAwesome;
+      font-weight: 100;
+      font-style: normal;
+      text-decoration: inherit;
+      -webkit-font-smoothing: antialiased
+    }
+
+    .datatable-component table thead tr th a.sort.asc:after {
+      color: #66f;
+      content: "\f062";
+    }
+
+    .datatable-component table thead tr th a.sort.desc:after {
+      color: #66f;
+      content: "\f063";
+    }
+
+    .datatable-component ul.pager {
+      text-align: left;
+    }
+
+    .datatable-component ul.pager li {
+      display: block;
+      float: left;
+      margin: 2px;
+    }
+
+    .datatable-component ul.pager li.pages {
+      line-height: 26px;
+    }
+
+    .datatable-component ul.pager li a {
+      padding: 2px 5px;
+      border: 1px solid #eee;
+      background-color: #f2f2f2;
+      color: #66f;
+      text-decoration: none;
+    }
+
+    .datatable-component ul.pager li a:active {
+      color: #eee;
+      background -color: #666
+    }
+
+    .datatable-component ul.pager li.active a {
+      color: #f2f2f2;
+      background-color: #66f
+    }
+    .shows-table {
+      width: 400px;
+    }
+    .hover-tip {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+      background: white;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="col">
+    </div>
+<div class="datatable-component">
+  <div class="shows-table">
+      <table>
+      <tbody><tr><td>1东方日产南区3、4月城市基金网络推广宣传计划表</td><td>华南一</td><td>33,359</td></tr><tr><td>2东方日产南区3、4月城市基金网络推广宣传计划表</td><td>华南二</td><td>109,356</td></tr><tr><td>3东方日产南区3、4月城市基金网络推广宣传计划表</td><td>华中二</td><td>39,680</td></tr><tr><td>4东风日产-北区-11~12月-BMAP补贴费用-网络投放计划表</td><td>华北二</td><td>47,670</td></tr><tr><td>5东风日产-北区-11~12月-BMAP补贴费用-网络投放计划表</td><td>华北一</td><td>9,324</td></tr></tbody>
+    </table>
+</div>
+</div>
+    <script>
+      var hoverTip = require('hover-tip');
+      new hoverTip('table td');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "hover-tip",
+  "repo": "chemzqm/hover-tip",
+  "description": "show extra content when hover elements which has clipped text",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/jquery": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "style.css"
+  ]
+}
