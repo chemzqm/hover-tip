@@ -2,7 +2,7 @@ var o = require('jquery');
 
 function HoverTip (selector) {
   if (!(this instanceof HoverTip)) return new HoverTip(selector);
-  this.el = o('table td');
+  this.el = o(selector);
   this._mouseenter = this.mouseenter.bind(this);
   this._mouseleave = this.mouseleave.bind(this);
   this.el.on('mouseenter', this._mouseenter);
