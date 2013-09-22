@@ -5,16 +5,21 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "component/jquery": "*"
+    "stagas/mouseleave": "*",
+    "stagas/mouseenter": "*",
+    "component/matches-selector": "*",
+    "component/domify": "*",
+    "component/css": "*",
+    "timoxley/offset": "*"
   },
   "development": {},
   "license": "MIT",
   "main": "index.js",
   "scripts": [
-    "index.js",
-    "template.js"
+    "index.js"
   ],
   "styles": [
-    "style.css"
-  ]
+    "hover-tip.css"
+  ],
+  "remotes": []
 }

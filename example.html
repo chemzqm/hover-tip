@@ -99,7 +99,7 @@
       font-weight: 100;
       font-style: normal;
       text-decoration: inherit;
-      -webkit-font-smoothing: antialiased
+      -webkit-font-smoothing: antialiased;
     }
 
     .datatable-component table thead tr th a.sort.asc:after {
@@ -136,12 +136,12 @@
 
     .datatable-component ul.pager li a:active {
       color: #eee;
-      background -color: #666
+      background -color: #666;
     }
 
     .datatable-component ul.pager li.active a {
       color: #f2f2f2;
-      background-color: #66f
+      background-color: #66f;
     }
     .shows-table {
       width: 400px;
@@ -158,8 +158,9 @@
   <body>
     <div class="col">
     </div>
+    <button id="remove">remove</button>
 <div class="datatable-component">
-  <div class="shows-table">
+  <div id="table" class="shows-table">
       <table>
       <tbody><tr><td>1东方日产南区3、4月城市基金网络推广宣传计划表</td><td>华南一</td><td>33,359</td></tr><tr><td>2东方日产南区3、4月城市基金网络推广宣传计划表</td><td>华南二</td><td>109,356</td></tr><tr><td>3东方日产南区3、4月城市基金网络推广宣传计划表</td><td>华中二</td><td>39,680</td></tr><tr><td>4东风日产-北区-11~12月-BMAP补贴费用-网络投放计划表</td><td>华北二</td><td>47,670</td></tr><tr><td>5东风日产-北区-11~12月-BMAP补贴费用-网络投放计划表</td><td>华北一</td><td>9,324</td></tr></tbody>
     </table>
@@ -167,7 +168,8 @@
 </div>
     <script>
       var hoverTip = require('hover-tip');
-      new hoverTip('table td');
+      var el = document.getElementById('table');
+      var tip = new hoverTip(el, 'td');
     </script>
   </body>
 </html>
