@@ -3,6 +3,8 @@
 
   show extra content when hover an element
 
+  [Demo](http://chemzqm.github.io/hover-tip/)
+
 ## Installation
 
   Install with [component(1)](http://component.io):
