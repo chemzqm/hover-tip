@@ -170,6 +170,9 @@
       var hoverTip = require('hover-tip');
       var el = document.getElementById('table');
       var tip = new hoverTip(el, 'td');
+      document.getElementById('remove').addEventListener('click', function(){
+          tip.remove()
+      })
     </script>
   </body>
 </html>

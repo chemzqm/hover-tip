@@ -2,7 +2,7 @@
   "name": "hover-tip",
   "repo": "chemzqm/hover-tip",
   "description": "show extra content when hover elements which has clipped text",
-  "version": "0.0.1",
+  "version": "1.0.3",
   "keywords": [],
   "dependencies": {
     "stagas/mouseleave": "*",
