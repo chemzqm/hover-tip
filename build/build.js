@@ -1254,7 +1254,7 @@ var styles = window.getComputedStyle;\n\
 \n\
 \n\
 function HoverTip (el, selector) {\n\
-  if (!(this instanceof HoverTip)) return new HoverTip(selector);\n\
+  if (!(this instanceof HoverTip)) return new HoverTip(el, selector);\n\
   this.el = el;\n\
   this.selector = selector;\n\
   this._mouseenter = this.mouseenter.bind(this);\n\
