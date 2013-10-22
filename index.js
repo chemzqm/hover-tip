@@ -9,7 +9,7 @@ var styles = window.getComputedStyle;
 
 
 function HoverTip (el, selector) {
-  if (!(this instanceof HoverTip)) return new HoverTip(selector);
+  if (!(this instanceof HoverTip)) return new HoverTip(el, selector);
   this.el = el;
   this.selector = selector;
   this._mouseenter = this.mouseenter.bind(this);
